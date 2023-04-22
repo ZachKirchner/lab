@@ -1,7 +1,7 @@
 class Account:
     def __init__(self, name: str):
         """
-        This function initializes the account
+        This function initializes the account object
 
         :param name: This is the name of the account
         """
