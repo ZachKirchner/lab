@@ -31,7 +31,7 @@ def test_withdraw():
     assert account1.get_balance() == pytest.approx(73.2, abs=0.01)
 
     assert account1.withdraw(-19) is False
-    assert account1.get_balance() == 73.2
+    assert account1.get_balance() == pytest.approx(73.2, abs=0.01)
 
     assert account1.withdraw(53.2) is True
     assert account1.get_balance() == 20
