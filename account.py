@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         """
         This function initializes the account object
 
@@ -8,7 +8,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount: float):
+    def deposit(self, amount: float) -> bool:
         """
         This function adds a value to the account balance then returns True if added successfully and False if it
         failed.
@@ -23,7 +23,7 @@ class Account:
         self.__account_balance += amount
         return True
 
-    def withdraw(self, amount: float):
+    def withdraw(self, amount: float) -> bool:
         """
         This functions subtracts a vlue from the account balance then returns True if subtracted successfully and
         False if it failed.
@@ -37,7 +37,7 @@ class Account:
             self.__account_balance -= amount
             return True
 
-    def get_balance(self):
+    def get_balance(self) -> float:
         """
         This functions returns the account balance.
 
@@ -45,7 +45,7 @@ class Account:
         """
         return self.__account_balance
 
-    def get_name(self):
+    def get_name(self) -> str:
         """
         This function returns the name of the account.
 
